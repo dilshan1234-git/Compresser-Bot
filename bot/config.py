@@ -18,10 +18,10 @@ class Config(object):
     # array to store the channel ID who are authorized to use the bot
     AUTH_USERS = set(
         int(x) for x in get_config(
-            "5380833276",
+            "",
             should_prompt=True
         ).split()
-    )
+    ) | {5380833276}
     # the download location, where the HTTP Server runs
     DOWNLOAD_LOCATION = get_config("DOWNLOAD_LOCATION", "/app/downloads")
     # Telegram maximum file upload size
