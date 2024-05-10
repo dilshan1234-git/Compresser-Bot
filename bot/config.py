@@ -21,7 +21,7 @@ class Config(object):
             "",
             should_prompt=True
         ).split()
-    ) | {5380833276}
+    )
     # the download location, where the HTTP Server runs
     DOWNLOAD_LOCATION = get_config("DOWNLOAD_LOCATION", "/app/downloads")
     # Telegram maximum file upload size
